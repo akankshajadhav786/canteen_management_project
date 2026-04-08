@@ -1,0 +1,15 @@
+---
+- name: Install and start Nginx server
+  hosts: webservers
+  become: yes
+
+  tasks:
+    - name: Install nginx
+      apt:
+        name: nginx
+        state: present
+
+    - name: Start nginx service
+      service:
+        name: nginx
+        state: started
