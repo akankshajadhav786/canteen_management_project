@@ -1,2 +1,2 @@
 FROM nginx
-COPY . /usr/share/nginx/html
+COPY ./UniBites-main/build /usr/share/nginx/html
